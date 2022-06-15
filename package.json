@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"yarn:sass -w\" \"hugo serve --bind 0.0.0.0 --port 3030\"",
+    "sass": "sass --watch ./static/sass:./static/css --style compressed"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
 }

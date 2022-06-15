@@ -1,0 +1,16 @@
+@import "./base/reset";
+@import "./base/typography";
+@import "./utils/colors";
+@import "./utils/spacing";
+
+@import "./layout/header";
+
+.portfolio {
+    margin: space(lg) auto;
+    max-width: 640px;
+    @media (max-width: 640px) {
+        & {
+            margin: space(lg) space(xs);
+        }
+    }
+}

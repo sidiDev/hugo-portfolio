@@ -1,0 +1,9 @@
+$gray: (
+    default: #6b7280,
+    primary: #374151,
+    secondary: #111827
+);
+
+@function color($color, $val) {
+    @return map-get($color, $val)
+}

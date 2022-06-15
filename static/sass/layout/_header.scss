@@ -1,0 +1,25 @@
+.header {
+
+    & > * {
+        margin-top: 5px;
+    }
+
+    .owner-img img {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+    }
+    
+    h2 {
+        margin-top: 8px;
+        font-size: space(md);
+        color: color($gray, primary);
+        font-weight: 600;
+    }
+
+    .owner-info {
+        color: color($gray, default);
+        
+    }
+
+}
